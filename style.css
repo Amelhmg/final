@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('Pacifico.ttf');
+}
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: cursive, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(images/backgroundimage2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.maindiv {
+    flex-direction: row;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 18vh;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    min-height: 64vh;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    width: 100vw;
+    height: 18vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex-basis: 25%;
+    justify-content: center;
+}
+
+.right {
+    flex-basis: 75%;
+    justify-content: center;
+}
+
+.logo {
+    transition-duration: 0.3s;
+    margin-top: 4vh;
+    padding: 0;
+    float: left;
+    font-size: 5vh;
+    font-weight: 700;
+    font-family: 'Pacifico';
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover {
+    font-size: 6.2vh;
+    /* text-shadow: 2px 2px orange; */
+    color: orange;
+}
+
+.gerant {
+    display: block;
+    margin-top: 30vh;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Pacifico';
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+.gerant:hover {
+    font-size: 2.3vh;
+    /* text-shadow: 2px 2px orange; */
+    color: orange;
+}
+
+.contactinformation {
+    flex-basis: 33%;
+    color: white;
+    justify-content: center;
+}
+
+.copyrights {
+    flex-basis: 33%;
+    padding-top: 13vh;
+    font-family: 'Pacifico';
+    color: white;
+}
+
+.follow {
+    flex-basis: 33%;    
+    color: white;
+    justify-content: center;
+}
+
+.info {
+    padding-top: 1.2vh;
+    font-size: 1.7vh;
+}
+
+.h4contactinformation {
+    padding-top: 2vh;
+    font-family: 'Pacifico';
+}
+
+
+.followus {
+    margin-top: 2vh;
+    color: white;
+    text-decoration: none;
+    font-family: 'Pacifico';
+}
+
+.followlinks {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.followlinks:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.leftform {
+    font-size: 4vh;
+}
+
+.indexbar {
+    width: 450px;
+    height: 40px;
+    padding: 0.5vh;
+    border-radius: 1vh;
+    margin-top: 8vh;    
+    font-size: 1vw;     
+}
+
+.indexbar::placeholder {
+    font-size: 16px;
+}
+
+.indexbutton {
+    display: inline-block;
+    background-color: rgba(255, 255, 255);
+    width: 170px;
+    height: 60px;
+    font-size: 1.8vh;
+    font-family: fantasy;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 1vh;
+    margin-top: 10px;
+    margin-left: 2vw;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.indexbutton:hover {
+    background-color: orange;
+    color: black;
+}
+
+.destination {
+    font-size: 4vh;
+    color: white;
+    font-family: 'Pacifico';
+}
+
+.searchbar {
+    width: 350px;
+    height: 40px;
+    padding: 0.5vh;
+    border: none;
+    border-radius: 1vh;
+    margin-top: 2vh;
+}
+
+.searchbar::placeholder {
+    font-size: 16px;
+}
+  
+.searchbutton {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 1vh;
+    font-size: 18px;  
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    margin-top: 4vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.searchbutton:hover {
+    background-color: orange;
+    color: black;
+}
+
+.hotels {
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    border: aliceblue;
+    border-style: groove;
+    border-radius: 1vh;
+    width: 55vw;
+    height: 15vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    transition-duration: 0.4s;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  }
+
+.desc {
+    flex-basis: 25%;
+    justify-content: center;
+  }
+
+.hotelinformation {
+    justify-content: center;
+    flex-basis: 50%;
+}
+
+.price {
+    justify-content: center;
+    flex-basis: 25%;
+    margin-right: 2vw;
+    margin-left: 3vh;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    border: black;
+    border-style: double;
+    border-radius: 3vh;
+    border-color: seashell;
+    background: rgb(129,129,129);
+    color: aliceblue;
+  }
+
+.imghotels {
+    width: 10vw;
+    height: 15vh;
+    float: left;
+    border-style: double;
+    border-color: aliceblue;
+    border-radius: 1vh;
+}
+
+.hotelname {
+    font-size: 2.5vh;
+    color: black;
+}
+
+.hoteldesc {
+    font-size: 1.5vh;
+    color: black;
+    margin-top: 0.5vh;
+}
+
+.hotels:hover {
+    background-color: rgb(105, 105, 105);   
+}
+
+.pricetitle {
+    margin-top: 0.5vh;
+    font-size: 1.45vh;
+}
+
+.realprice {
+    font-size: 1.75vh;
+}
+
+.mainslogan {
+    margin-top: 5vh;
+    font-size: 4vh;
+    color: white;
+}
+
+.mainbutton:hover {
+    background-color: #111111;
+    color: white;
+}
+
+.inputbox {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 70vw;
+    height: 70vh;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.line {
+    margin-top: 2vh;
+}
+
+.owninp {
+    width: 15vw;
+    height: 3vh;
+    border-radius: 0.5vh;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.libelle {
+    width: 10vw;
+    display: inline-block;  
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .indexbar {
+        width: 300px;
+        height: 40px;
+    }
+
+    .searchbar {
+        width: 200px;
+        height: 40px;
+        padding: 0.5vh;
+        border: none;
+        border-radius: 1vh;
+        margin-top: 8vh;    
+        font-size: 1vw;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .hotels {
+        width: 85vw;
+        min-height: 15vh;
+        height: auto;
+      }
+
+    .imghotels {
+        width: 20vw;
+        height: 20vh;
+    }
+} 
+
+@media only screen and (max-width: 1200px) {
+    .contactinformation {
+        flex-basis: 100%;
+    }
+    
+    .copyrights {
+        flex-basis: 100%;
+        display: none;
+    }
+    
+    .follow {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .gerant {
+        font-size: 2.3vh;
+    }
+
+    .gerant:hover {
+        font-size: 2.5vh;
+    }
+}
